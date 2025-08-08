@@ -5,7 +5,7 @@
 rm -rf .repo/local_manifests
 
 # Repo init
-repo init -u https://github.com/crdroidandroid/android.git -b 15.0 --git-lfs
+repo init -u https://github.com/Evolution-X/manifest -b bka --git-lfs
 
 # Repo sync
 /opt/crave/resync.sh
@@ -25,22 +25,22 @@ rm -rf hardware/xiaomi
 git clone https://github.com/wannqn/device_xiaomi_sm8350-common device/xiaomi/sm8350-common
 
 # Device configuration
-git clone https://github.com/wannqn/android_device_xiaomi_renoir device/xiaomi/renoir
+git clone https://github.com/wannqn/android_device_xiaomi_renoir -b 16 device/xiaomi/renoir
 
 # Common vendor tree
-git clone https://github.com/RobertGarciaa/vendor_xiaomi_sm8350-common vendor/xiaomi/sm8350-common
+git clone https://github.com/wannqn/vendor_xiaomi_sm8350-common -b 16 vendor/xiaomi/sm8350-common
 
 # Vendor tree
-git clone https://github.com/RobertGarciaa/proprietary_vendor_xiaomi_renoir vendor/xiaomi/renoir
+git clone https://github.com/wannqn/proprietary_vendor_xiaomi_renoir -b 16 vendor/xiaomi/renoir
 
 # Vendor bcr
 git clone https://github.com/RobertGarciaa/vendor_bcr vendor/bcr
 
 # Kernel Tree
-git clone https://github.com/RobertGarciaa/android_kernel_xiaomi_sm8350 kernel/xiaomi/sm8350
+git clone https://github.com/wannqn/android_kernel_xiaomi_sm8350 -b 16 kernel/xiaomi/sm8350
 
 # Hardware
-git clone https://github.com/RobertGarciaa/hardware_xiaomi hardware/xiaomi
+git clone https://github.com/WitAqua-Devices/hardware_xiaomi -b 16.0 hardware/xiaomi
 
 . build/envsetup.sh
-lunch lineage_renoir-bp1a-user && mka bacon
+lunch lineage_renoir-bp2a-user && m evolution
