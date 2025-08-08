@@ -22,10 +22,10 @@ rm -rf hardware/xiaomi
 # Clone new device specific repos
 
 # Common deivce tree
-git clone https://github.com/RobertGarciaa/device_xiaomi_sm8350-common device/xiaomi/sm8350-common
+git clone github.com/wannqn/device_xiaomi_sm8350-common device/xiaomi/sm8350-common
 
 # Device configuration
-git clone https://github.com/RobertGarciaa/android_device_xiaomi_renoir device/xiaomi/renoir
+git clone https://github.com/wannqn/android_device_xiaomi_renoir device/xiaomi/renoir
 
 # Common vendor tree
 git clone https://github.com/RobertGarciaa/vendor_xiaomi_sm8350-common vendor/xiaomi/sm8350-common
