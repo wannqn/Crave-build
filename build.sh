@@ -8,6 +8,13 @@ rm -rf prebuilts/clang/host/linux-x86
 # Repo sync
 /opt/crave/resync.sh
 
+rm -rf device/xiaomi/renoir
+rm -rf device/xiaomi/sm8350-common
+rm -rf vendor/xiaomi/renoir
+rm -rf vendor/xiaomi/sm8350-common
+rm -rf kernel/xiaomi/sm8350
+rm -rf hardware/xiaomi
+
 # Device configuration
 git clone https://github.com/wannqn/android_device_xiaomi_renoir  -b 16 device/xiaomi/renoir
 
