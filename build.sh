@@ -15,7 +15,7 @@ rm -rf device/xiaomi/sm8350-common
 rm -rf device/xiaomi/renoir
 rm -rf vendor/xiaomi/sm8350-common
 rm -rf vendor/xiaomi/renoir
-rm -rf vendor/bcr;
+rm -rf vendor/bcr
 rm -rf kernel/xiaomi/sm8350
 rm -rf hardware/xiaomi
 
