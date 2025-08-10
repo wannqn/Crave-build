@@ -16,22 +16,22 @@ rm -rf kernel/xiaomi/sm8350
 rm -rf hardware/xiaomi
 
 # Device configuration
-git clone https://github.com/wannqn/android_device_xiaomi_renoir  -b 16 device/xiaomi/renoir
+git clone https://github.com/TheMysticle/android_device_xiaomi_renoir -b lineage-23.0 device/xiaomi/renoir
 
 # Common deivce tree
-git clone https://github.com/wannqn/device_xiaomi_sm8350-common -b 16 device/xiaomi/sm8350-common
+git clone https://github.com/TheMysticle/android_device_xiaomi_sm8350-common -b lineage-23.0 device/xiaomi/sm8350-common
 
 # Vendor tree
-git clone https://github.com/wannqn/proprietary_vendor_xiaomi_renoir -b 16 vendor/xiaomi/renoir
+git clone https://github.com/TheMysticle/proprietary_vendor_xiaomi_renoir -b lineage-23.0 vendor/xiaomi/renoir
 
 # Common vendor tree
-git clone https://github.com/wannqn/vendor_xiaomi_sm8350-common  -b 16 vendor/xiaomi/sm8350-common
+git clone https://github.com/TheMysticle/proprietary_vendor_xiaomi_sm8350-common -b lineage-23.0 vendor/xiaomi/sm8350-common
 
 # Kernel Tree
-git clone https://github.com/wannqn/android_kernel_xiaomi_sm8350  -b 16 kernel/xiaomi/sm8350
+git clone https://github.com/TheMysticle/android_kernel_xiaomi_sm8350 -b lineage-23.0 kernel/xiaomi/sm8350
 
 # Hardware
-git clone https://github.com/WitAqua-Devices/hardware_xiaomi  -b 16.0 hardware/xiaomi
+git clone https://github.com/WitAqua-Devices/hardware_xiaomi -b 16.0 hardware/xiaomi
 
 . build/envsetup.sh
 lunch lineage_renoir-user && m evolution
