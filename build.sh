@@ -5,8 +5,12 @@ repo init -u https://github.com/Evolution-X/manifest -b bka --git-lfs
 
 rm -rf prebuilts/clang/host/linux-x86
 
-# Repo sync
+# Build Sync
 /opt/crave/resync.sh
+repo sync
+echo "=============================="
+echo "Master the Sync is now Success"
+echo "=============================="
 
 rm -rf device/xiaomi/renoir
 rm -rf device/xiaomi/sm8350-common
