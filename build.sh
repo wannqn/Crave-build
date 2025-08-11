@@ -7,10 +7,6 @@ rm -rf prebuilts/clang/host/linux-x86
 
 # Build Sync
 /opt/crave/resync.sh
-repo sync
-echo "=============================="
-echo "Master the Sync is now Success"
-echo "=============================="
 
 rm -rf device/xiaomi/renoir
 rm -rf device/xiaomi/sm8350-common
