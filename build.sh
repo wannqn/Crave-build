@@ -31,7 +31,7 @@ git clone https://github.com/TheMysticle/proprietary_vendor_xiaomi_sm8350-common
 git clone https://github.com/TheMysticle/android_kernel_xiaomi_sm8350 -b lineage-23.0 kernel/xiaomi/sm8350
 
 # Hardware
-git clone https://github.com/WitAqua-Devices/hardware_xiaomi -b 16.0 hardware/xiaomi
+git clone https://github.com/Evolution-X-Devices/hardware_xiaomi.git -b bka hardware/xiaomi
 
 . build/envsetup.sh
 lunch lineage_renoir-user && m evolution
