@@ -29,6 +29,8 @@ git clone https://github.com/TheMysticle/proprietary_vendor_xiaomi_sm8350-common
 
 # Kernel Tree
 git clone https://github.com/TheMysticle/android_kernel_xiaomi_sm8350 -b lineage-23.0 kernel/xiaomi/sm8350
+chmod +x kernel/xiaomi/sm8350/kernelsetup.sh
+bash kernel/xiaomi/sm8350/kernelsetup.sh
 
 # Hardware
 git clone https://github.com/Evolution-X-Devices/hardware_xiaomi.git -b bka hardware/xiaomi
