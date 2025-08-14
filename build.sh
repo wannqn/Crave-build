@@ -20,7 +20,7 @@ rm -rf hardware/xiaomi
 git clone https://github.com/wannqn/android_device_xiaomi_renoir -b Infinity device/xiaomi/renoir
 
 # Common deivce tree
-git clone https://github.com/TheMysticle/android_device_xiaomi_sm8350-common -b lineage-23.0 device/xiaomi/sm8350-common
+git clone https://github.com/wannqn/android_device_xiaomi_sm8350-common -b Infinity device/xiaomi/sm8350-common
 
 # Vendor tree
 git clone https://github.com/TheMysticle/proprietary_vendor_xiaomi_renoir -b lineage-23.0 vendor/xiaomi/renoir
