@@ -15,6 +15,7 @@ rm -rf vendor/xiaomi/renoir
 rm -rf vendor/xiaomi/sm8350-common
 rm -rf kernel/xiaomi/sm8350
 rm -rf hardware/xiaomi
+rm -rf vendor/xiaomi/camera
 
 # Device configuration
 git clone https://github.com/wannqn/android_device_xiaomi_renoir -b Infinity device/xiaomi/renoir
@@ -36,6 +37,9 @@ bash kernel/xiaomi/sm8350/kernelsetup.sh
 # Hardware
 git clone https://github.com/Infinity-X-Devices/android_hardware_xiaomi -b 16 hardware/xiaomi
 # git clone https://github.com/Evolution-X-Devices/hardware_xiaomi.git -b bka hardware/xiaomi
+
+# Miui Camera
+git clone https://github.com/wannqn/vendor_xiaomi_camera -b Renoir vendor/xiaomi/camera
 
 . build/envsetup.sh
 lunch infinity_renoir-user && m bacon
