@@ -7,6 +7,14 @@ crave run --no-patch -- "curl https://raw.githubusercontent.com/wannqn/Crave-bui
 
 All in one command
 
+EvolutionX
+
+```
+crave clone create --projectID 93 /crave-devspaces/evo16; \
+cd evo16; \
+crave run --no-patch -- "curl https://raw.githubusercontent.com/wannqn/Crave-build/refs/heads/16/evolution.sh | bash"
+```
+
 InfinityX
 
 ```
@@ -15,10 +23,10 @@ cd inf16; \
 crave run --no-patch -- "curl https://raw.githubusercontent.com/wannqn/Crave-build/refs/heads/16/infinity.sh | bash"
 ```
 
-EvolutionX
+Rising
 
 ```
-crave clone create --projectID 93 /crave-devspaces/evo16; \
-cd evo16; \
-crave run --no-patch -- "curl https://raw.githubusercontent.com/wannqn/Crave-build/refs/heads/16/evolution.sh | bash"
+crave clone create --projectID 93 /crave-devspaces/ris16; \
+cd ris16; \
+crave run --no-patch -- "curl https://raw.githubusercontent.com/wannqn/Crave-build/refs/heads/16/rising.sh | bash"
 ```
