@@ -23,6 +23,14 @@ cd inf16; \
 crave run --no-patch -- "curl https://raw.githubusercontent.com/wannqn/Crave-build/refs/heads/16/infinity.sh | bash"
 ```
 
+Cherish
+
+```
+crave clone create --projectID 93 /crave-devspaces/che16; \
+cd che16; \
+crave run --no-patch -- "curl https://raw.githubusercontent.com/wannqn/Crave-build/refs/heads/16/cherish.sh | bash"
+```
+
 Rising
 
 ```
