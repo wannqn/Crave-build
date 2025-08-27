@@ -40,4 +40,4 @@ git clone https://github.com/Evolution-X-Devices/hardware_xiaomi.git -b bka hard
 git clone https://github.com/wannqn/vendor_xiaomi_camera -b Renoir vendor/xiaomi/camera
 
 . build/envsetup.sh
-lunch lineage_renoir-user && m evolution
+lunch lineage_renoir-bp2a-user && m evolution
