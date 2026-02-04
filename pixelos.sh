@@ -41,4 +41,4 @@ git clone https://github.com/RobertGarciaa/hardware_xiaomi -b sixteen hardware/x
 git clone https://github.com/wannqn/vendor_xiaomi_camera -b Renoir vendor/xiaomi/camera
 
 . build/envsetup.sh
-lunch aosp_renoir-userdebug && mka bacon
+lunch aosp_renoir-bp2a-userdebug && mka bacon
