@@ -1,46 +1,40 @@
-# ROM Build commands for Mi 11 Lite 5G renoir
-
-# Remove local_manifests
+#!/bin/bash
+set -e
 
 rm -rf .repo/local_manifests
 
 # Repo init
-repo init -u https://github.com/crdroidandroid/android.git -b 15.0 --git-lfs
+repo init -u https://github.com/Evolution-X/manifest -b cnb --git-lfs
 
-# Repo sync
+rm -rf prebuilts/clang/host/linux-x86
+
+# Build Sync
 /opt/crave/resync.sh
 
-# Remove old device specific repos
-rm -rf device/xiaomi/sm8350-common
 rm -rf device/xiaomi/renoir
-rm -rf vendor/xiaomi/sm8350-common
+rm -rf device/xiaomi/sm8350-common
 rm -rf vendor/xiaomi/renoir
-rm -rf vendor/bcr
+rm -rf vendor/xiaomi/sm8350-common
 rm -rf kernel/xiaomi/sm8350
 rm -rf hardware/xiaomi
 
-# Clone new device specific repos
+# Device tree
+git clone https://github.com/wannqn1/android_device_xiaomi_renoir -b lineage-23.2 device/xiaomi/renoir
 
-# Common deivce tree
-git clone https://github.com/wannqn/device_xiaomi_sm8350-common device/xiaomi/sm8350-common
-
-# Device configuration
-git clone https://github.com/wannqn/android_device_xiaomi_renoir device/xiaomi/renoir
-
-# Common vendor tree
-git clone https://github.com/RobertGarciaa/vendor_xiaomi_sm8350-common vendor/xiaomi/sm8350-common
+# Common device tree
+git clone https://github.com/LineageOS/android_device_xiaomi_sm8350-common -b lineage-23.2 device/xiaomi/sm8350-common
 
 # Vendor tree
-git clone https://github.com/RobertGarciaa/proprietary_vendor_xiaomi_renoir vendor/xiaomi/renoir
+git clone https://github.com/TheMysticle/proprietary_vendor_xiaomi_renoir -b lineage-23.2 vendor/xiaomi/renoir
 
-# Vendor bcr
-git clone https://github.com/RobertGarciaa/vendor_bcr vendor/bcr
+# Common vendor tree
+git clone https://github.com/TheMysticle/proprietary_vendor_xiaomi_sm8350-common -b lineage-23.2 vendor/xiaomi/sm8350-common
 
-# Kernel Tree
-git clone https://github.com/RobertGarciaa/android_kernel_xiaomi_sm8350 kernel/xiaomi/sm8350
+# Kernel
+git clone https://github.com/LineageOS/android_kernel_xiaomi_sm8350 -b lineage-23.2 kernel/xiaomi/sm8350
 
 # Hardware
-git clone https://github.com/RobertGarciaa/hardware_xiaomi hardware/xiaomi
+git clone https://github.com/Evolution-X-Devices/hardware_xiaomi -b cnb hardware/xiaomi
 
 . build/envsetup.sh
-lunch lineage_renoir-bp1a-user && mka bacon
+lunch lineage_renoir-cp2a-user && m evolution
