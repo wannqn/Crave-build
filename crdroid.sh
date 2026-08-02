@@ -33,6 +33,8 @@ git clone https://github.com/wannqn1/vendor_xiaomi_sm8350-common -b sixteen vend
 
 # Kernel
 git clone https://github.com/wannqn1/android_kernel_xiaomi_sm8350 -b sixteen kernel/xiaomi/sm8350
+chmod +x kernel/xiaomi/sm8350/ksun.sh
+bash kernel/xiaomi/sm8350/ksun.sh
 
 # BCR
 git clone https://github.com/RobertGarciaa/vendor_bcr -b main vendor/bcr
