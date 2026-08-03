@@ -4,9 +4,7 @@ set -e
 rm -rf .repo/local_manifests
 
 # Repo init
-repo init -u https://github.com/Evolution-X/manifest -b cnb --git-lfs
-
-rm -rf prebuilts/clang/host/linux-x86
+repo init -u https://github.com/Evolution-X/manifest -b cnb --git-lfs --depth=1
 
 # Build Sync
 /opt/crave/resync.sh
